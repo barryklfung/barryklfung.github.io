@@ -12,16 +12,13 @@
     </style>
   </head>
   <header>
-          <div class="w3-top">
-  <ul class="w3-navbar w3-teal w3-wide w3-padding-8 w3-card-2">
-    <li>
-      <a href="{{site.url}}" class="w3-margin-left"><b>K.L. Barry Fung</b></a>
-    </li>
-    {%include rightheader.html%}
-  </ul>
-  
+    <div class="w3-top">
+      <ul class="w3-navbar w3-teal w3-wide w3-padding-8 w3-card-2">
+        <!-- Float links to the right. Hide them on small screens -->
+        {%include rightheader.html%}
+      </ul>
     </div>
-</header>
+  </header>
   <body class="w3-light-grey">
     <!-- Page Container -->
     <div class="w3-content w3-margin-top-64" style="max-width:1400px;">
@@ -36,7 +33,7 @@
       
       <!-- End Page Container -->
     </div>
-
     {%include footer.html%}
+
   </body>
 </html>

@@ -1,7 +1,2 @@
-<!-- _includes/base.html, borrowed liberally from http://ricostacruz.com/til/relative-paths-in-jekyll -->
-{% assign base = '' %}
-{% assign depth = page.url | split: '/' | size | minus: 1 %}
-{% if    depth <= 1 %}{% assign base = '.' %}
-{% elsif depth == 2 %}{% assign base = '..' %}
-{% elsif depth == 3 %}{% assign base = '../..' %}
-{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+<!-- _includes/base.html, borrowed liberally from http://ricostacruz.com/til/relative-paths-in-jekyll , and modified-->
+{% assign base = '' %}{% assign depth = page.url | split: '/' | size %}{% if    depth <= 1 %}{% assign base = '.' %}{% elsif depth == 2 %}{% assign base = '..' %}{% elsif depth == 3 %}{% assign base = '../..' %}{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
