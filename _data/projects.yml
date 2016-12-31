@@ -1,0 +1,15 @@
+inprogress:
+ - name: Website
+   description: A portfolio website (this one!) constructed using Jekyll, HTML, and CSS. Original template taken from w3.org
+   url: http://www.klfung.ca
+   tasks:
+    - name: Create Jekyll Template from W3.css template
+      progress: 100
+    - name: Develop YAML structure for Projects
+      progress: 100
+    - name: Construct sample course notes subcategory, with scanned notes.
+      progress: 25
+planned:
+ - name: Secret Santa automation
+   description: A Django-Python website to atomatically create secret santa gifts.
+completed:
