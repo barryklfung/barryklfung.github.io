@@ -8,8 +8,10 @@ inprogress:
     - name: Develop YAML structure for Projects
       progress: 100
     - name: Construct sample course notes subcategory, with scanned notes.
-      progress: 25
+      progress: 75
 planned:
+ - name: Publish the CSS as a separate Jekyll Theme.
+   description: Extract the salient features of the CSS/Liquid/HTML of this website as a separate jekyll theme.
  - name: Secret Santa automation
    description: A Django-Python website to atomatically create secret santa gifts.
 completed:
