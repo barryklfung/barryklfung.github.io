@@ -4,7 +4,57 @@ title: Projects - KLBF
 ---
     <div class="w3-col">
       <div class="w3-container w3-text-grey w3-card-2 w3-white w3-margin-bottom">
+<<<<<<< HEAD
         <h2> Projects</h1>
         <p> Coming soon!</p>
+=======
+        <h2> Projects</h2>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h3 class ="w3-text-grey">In Progress</h3>
+        {%for project in site.data.projects.inprogress%}
+          <hr>
+          <a href="{{project.url}}"> <h4>{{project.name}}</h4></a>
+          <p> <i>Description:</i> {{project.description}}</p>
+          <p>
+            <b>Tasks:</b>
+            <ul style="margin:0">
+              {%for task in project.tasks%}
+              <li style="line-height:40px">
+                {{task.name}}:
+                <div class="w3-progress-container w3-round-xlarge w3-small" style="width:80%">
+                  <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:{{task.progress}}%">
+                      <div class="w3-center w3-text-white" style="line-height:20px">{{task.progress}}%</div>
+                  </div>
+                </div>
+              </li>
+              {%endfor%}
+            </ul>  
+          </p>  
+        {%endfor%}
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h3 class="w3-text-grey">Planned</h3>
+        {%for project in site.data.projects.planned%}
+          <hr>
+          <h4>{{project.name}}</h4>
+          <p><i>Description:</i> {{project.description}}</p>
+        {%endfor%}
+      </div>
+    </div>
+    <div class="w3-half">      
+      <div class="w3-completed">
+        <div class="w3-container w3-text-grey w3-card-2 w3-white w3-margin-bottom">
+          <h3 class="w3-text-grey">Completed</h3>
+          {%for project in site.data.projects.completed%}
+            <hr>
+            <h4>{{project.name}}</h4>
+          {%endfor%}
+        </div>
+>>>>>>> 8be03c7b37a026a4057792a73a48d1bf5e326520
       </div>
     </div>

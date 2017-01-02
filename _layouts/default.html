@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="{{site.url}}/{{site.baseurl}}/styles/w3.css">
     <link rel="stylesheet" href="{{site.url}}/{{site.baseurl}}/styles/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{site.url}}/{{site.baseurl}}/styles/style.css">
     <style>	
       header,html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
   </head>
   <header>
-          <div class="w3-top">
-  <ul class="w3-navbar w3-teal w3-wide w3-padding-8 w3-card-2">
-    <li>
-      <a href="{{site.url}}" class="w3-margin-left"><b>K.L. Barry Fung</b></a>
-    </li>
-    {%include rightheader.html%}
-  </ul>
-  
-    </div>
-</header>
+  <div class="w3-top">
+    <ul class="w3-navbar w3-teal w3-wide w3-padding-8 w3-card-2">
+      <li>
+        <a href="{{site.url}}" class="w3-margin-left"><b>K.L. Barry Fung</b></a>
+      </li>
+      {%include rightheader.html%}
+    </ul>  
+  </div>
+  </header>
   <body class="w3-light-grey">
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top-64" style="max-width:1400px;">
+    <div class="wrapper">
+      <div class="w3-content w3-margin-top-64" style="max-width:1400px;">
+          
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+          {{content}}
+
+        <!-- End Grid -->
+        </div>
         
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-
-        {{content}}
-
-      <!-- End Grid -->
+        <!-- End Page Container -->
       </div>
-      
-      <!-- End Page Container -->
     </div>
-
     {%include footer.html%}
   </body>
 </html>
