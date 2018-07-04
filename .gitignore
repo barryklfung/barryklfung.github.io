@@ -2,4 +2,4 @@ _site/
 vendor/
 .bundle
 .vscode/
-.DS_Code
+.DS_Store
