@@ -9,6 +9,5 @@ eval $command
 iso_date=`date +%F`
 
 msg="Autoupdate on $iso_date"
-git add .
-git commit -m "$msg"
+git commit -am "$msg"
 git push origin master
