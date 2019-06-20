@@ -1,17 +1,20 @@
 inprogress:
- - name: Website
-   description: A portfolio website (this one!) constructed using Jekyll, HTML, and CSS. Original template taken from w3.org
-   url: http://www.klfung.ca
+ - name: Multi-device activity tracking
+   description: A combined desktop and mobile tracking solution for time spent on video games
    tasks:
-    - name: Create Jekyll Template from W3.css template
+    - name: Design communication architecture
       progress: 100
-    - name: Develop YAML structure for Projects
-      progress: 100
-    - name: Construct sample course notes subcategory, with scanned notes.
-      progress: 100
+    - name: Develop desktop solution (Python, Kivy)
+      progress: 0
+    - name: Develop mobile app (Kotlin)
+      progress: 0
 planned:
- - name: Publish the CSS as a separate Jekyll Theme.
-   description: Extract the salient features of the CSS/Liquid/HTML of this website as a separate jekyll theme.
- - name: Secret Santa automation
-   description: A Django-Python website to atomatically create secret santa gifts.
+  - name: Publish the CSS as a separate Jekyll Theme.
+    description: Extract the salient features of the CSS/Liquid/HTML of this website as a separate jekyll theme.
 completed:
+  - name: Website
+    description: A portfolio website (this one!) constructed using Jekyll, HTML, and CSS. Original template taken from w3.org
+    url: http://www.klfung.ca
+  - name: Communications Server
+    description: Communications log for experiments and automated tasks
+
