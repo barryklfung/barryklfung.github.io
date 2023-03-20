@@ -3,3 +3,7 @@ github-url: https://github.com/barryklfung
 linkedin-url: https://ca.linkedin.com/in/barryklfung
 baseurl:
 
+plugins:  
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
